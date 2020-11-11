@@ -45,12 +45,31 @@ public final class App {
             symboleJoueur2 = 'X';
         }
         System.out.println("\n" + "Tu es donc le " + joueur1 + " et tu auras le symbole : " +  symboleJoueur1 + " et le Joueur2 aura :" + symboleJoueur2 +"\n" + "choose your position ! (1 à 9)");
-        int  b= scan.nextInt();
-
-
-        plateau.placezPosition(b, symboleJoueur);
         
 
-        
+
+        boolean gameIsPlaying = true;
+        while(gameIsPlaying){
+
+
+            int  b= scan.nextInt();
+            plateau.placezPosition(b, symboleJoueur1);
+           joueur1.getsymbolJoueur();
+
+
+            System.out.println("Turn of player 2 ! ");
+
+          
+
+            b= scan.nextInt();
+
+            plateau.placezPosition(b, symboleJoueur2);
+
+            System.out.println("Turn of player1");
+
+
+            
+            //symboleJoueur =scan.nextInt();
+        }
     }
 }

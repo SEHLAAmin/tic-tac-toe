@@ -8,12 +8,16 @@ public class Joueur{
     // Attributs de class
     private String name; 
     private char symbolJoueur; 
+    private char symbolJoueur1; 
+    private char symbolJoueur2; 
     Terrain terrain;
 
     // Constructor
     public Joueur(String name, char symbolJoueur) {
         this.name = name; 
         this.symbolJoueur = symbolJoueur; 
+        this.symbolJoueur1 = symbolJoueur1;
+        this.symbolJoueur2 = symbolJoueur2;
     }
     /*GETTER & SETTER */ 
 	public String getName() {
